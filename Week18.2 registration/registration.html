@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/registration.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="p-x-1 p-y-3">
+        <form class="card card-block m-x-auto bg-faded form-width" novalidate>
+            <legend class="m-b-1 text-xs-center">Регистрация</legend>
+            <div class="form-group input-group">
+                <span class="has-float-label">
+                    <input class="form-control" id="first" type="text" placeholder="Имя" min="1" max="20" required />
+                    <label for="first">Имя</label>
+                </span>
+                <span class="has-float-label">
+                    <input class="form-control" id="last" type="text" placeholder="Фамилия" required min="1" max="20" />
+                    <label for="last">Фамилия</label>
+                </span>
+            </div>
+            <div class="form-group input-group">
+                <span class="has-float-label">
+                    <input class="form-control" id="emailField" type="email" placeholder="E-mail" required />
+                    <label for="email">E-mail</label>
+                </span>
+            </div>
+            <div class="form-group has-float-label">
+                <input class="form-control" id="telField" type="tel" min="10" max="20" placeholder="Номер телефона"
+                    min="1" max="20" required />
+                <label for="tel">Номер телефона</label>
+            </div>
+            <div class="form-group has-float-label">
+                <input class="form-control" id="password" type="password" placeholder="Пароль (eng)" required />
+                <label for="password">Пароль (eng)</label>
+            </div>
+            <div class="text-xs-center">
+                <button type="button" id="button" onclick="checkAll()">Регистрация</button>
+            </div>
+            <div id="errorsInfo"></div>
+        </form>
+    </div>
+
+
+
+
+
+
+    <script src="./assets/registration.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
