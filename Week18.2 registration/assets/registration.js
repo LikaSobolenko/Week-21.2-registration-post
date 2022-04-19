@@ -24,7 +24,7 @@ function checkAll() {
         errors.push("Ваш E-mail введен неверно!");
     };
 
-    let passwordFormat = /^[a-z]+([-_]?[a-z0-9]+){0,2}$/i;
+    let passwordFormat = /^[a-z]+([-_]?[a-z0-9]+){8,}$/i;
     if (password.value.match(passwordFormat)) {
         console.log('УРА пароль!');
     } else {
@@ -35,7 +35,7 @@ function checkAll() {
     if (telField.value.match(telFormat)) {
         console.log('УРА телефон!');
     } else {
-        errors.push("Ваш Пароль введен неверно!");
+        errors.push("Ваш Телефон введен неверно!");
     };
 
     console.log(errors.length);
